@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📶 WiFi Auto Connect"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Botón seleccionar archivo -->
+    <Button
+        android:id="@+id/btnSeleccionarArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📄 Seleccionar archivo de contraseñas (.txt)"
+        android:backgroundTint="#1565C0"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvArchivoSeleccionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ningún archivo seleccionado"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón escanear redes -->
+    <Button
+        android:id="@+id/btnEscanear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Escanear redes WiFi"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toca 'Escanear' para buscar redes"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redes disponibles:"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/listViewRedes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
